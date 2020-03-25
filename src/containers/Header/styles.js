@@ -26,7 +26,12 @@ export const DescriptionWrapper = styled.div`
   margin-left: 20px;
 
   &:last-child {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 1fr;
     width: 45%;
+    margin-top: 5vh;
   }
 
   @media ${device.tablet} {
@@ -35,6 +40,7 @@ export const DescriptionWrapper = styled.div`
     margin-bottom: 15px;
 
     &:last-child {
+      grid-gap: 7%;
       width: 100%;
       margin-bottom: 50px;
     }
@@ -103,12 +109,13 @@ export const TypeWritterText = styled.p`
 `;
 
 export const Photo = styled.img`
-  max-width: 60%;
+  max-width: 80%;
   height: auto;
   box-shadow: 10px 13px 0px 8px rgba(244,122,101,1);
   border-radius: 2px;
 
   &:hover {
+    transition: 1s ease;
     transform: scale(1.1);
   }
 `;
