@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { typing, blink } from '~/assets/styles/partials/_animations';
+import { typing, blink, textFocusIn } from '~/assets/styles/partials/_animations';
 import { device } from '~/assets/styles/partials/_variables';
 
 export const HeaderWrapper = styled.main`
@@ -50,17 +50,19 @@ export const DescriptionWrapper = styled.div`
 export const DescriptionTitle = styled.h3`
   font: 400 20px 'Poppins', sans-serif;
   font-style: normal;
-  color: #5b5963;
+  color: #666;
   letter-spacing: 1px;
+  animation: ${textFocusIn} 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 `;
 
 export const DescriptionText = styled.h1`
   font-family: 'Poppins', sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   padding: 10px 0 10px;
   font-weight: 400;
-  color: #5b5963;
+  color: #666;
   letter-spacing: 5px;
+  animation: ${textFocusIn} 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
   span {
     font-weight: 600;
@@ -91,6 +93,7 @@ export const TypeWritter = styled.div`
 `;
 
 export const TypeWritterText = styled.p`
+  color: #666;
   font-family: 'Poppins', sans-serif;
   display: inline-block;
   overflow: hidden;
