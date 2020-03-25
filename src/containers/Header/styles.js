@@ -6,7 +6,7 @@ import { device } from '~/assets/styles/partials/_variables';
 export const HeaderWrapper = styled.main`
   display: flex;
   flex-wrap: wrap;
-  height: 85vh;
+  min-height: 85vh;
 `;
 
 export const CodersContainer = styled.div`
