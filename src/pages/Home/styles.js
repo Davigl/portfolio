@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Footer = styled.footer`
   position: relative;
-  bottom: 0;
+  bottom: 10px;
   margin-left: 20px;
 `;
 
