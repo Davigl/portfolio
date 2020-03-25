@@ -3,7 +3,7 @@ import React from 'react';
 import Socials from '~/containers/Socials';
 
 import {
-  HeaderWrapper, DescriptionWrapper, CodersContainer,
+  HeaderWrapper, DescriptionWrapper,
   DescriptionTitle, DescriptionText, TypeWritter,
   TypeWritterText, Photo
 } from './styles';

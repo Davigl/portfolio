@@ -1,4 +1,6 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import {
+  FaGithub, FaLinkedin, FaEnvelope, FaFreeCodeCamp
+} from 'react-icons/fa';
 
 import styled, { css } from 'styled-components';
 
@@ -41,6 +43,13 @@ export const SocialsWrapper = styled.div`
   height: 50%;
 `;
 
+export const BadgesWrapper = styled.div`
+  display: grid;
+  grid-template-rows: 120px;
+  grid-template-columns: repeat(2, 90px);
+  grid-gap: 20px;
+`;
+
 export const GithubIcon = styled(FaGithub)`
   ${_icon};
 `;
@@ -49,8 +58,12 @@ export const LinkedinIcon = styled(FaLinkedin)`
   ${_icon};
 `;
 
-export const SourcererIcon = styled.img.attrs(({
-  src: 'https://i.imgur.com/aQzwb9I.png',
+export const FCCIcon = styled(FaFreeCodeCamp)`
+  ${_icon};
+`;
+
+export const SourcererIcon = styled.object.attrs(({
+  data: 'https://i.imgur.com/aQzwb9I.png',
   alt: 'Sourcerer'
 }))`
   ${_icon};

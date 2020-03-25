@@ -9,15 +9,6 @@ export const HeaderWrapper = styled.main`
   min-height: 85vh;
 `;
 
-export const CodersContainer = styled.div`
-  width: 50%;
-
-  @media ${device.tablet} {
-    width: 95%;
-    margin-top: 40px;
-  }
-`;
-
 export const DescriptionWrapper = styled.div`
   display: flex;
   width: 50%;
@@ -53,6 +44,10 @@ export const DescriptionTitle = styled.h3`
   color: #666;
   letter-spacing: 1px;
   animation: ${textFocusIn} 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+  @media ${device.tablet} {
+    font-size: 15px;
+  }
 `;
 
 export const DescriptionText = styled.h1`
@@ -62,10 +57,11 @@ export const DescriptionText = styled.h1`
   font-weight: 400;
   color: #666;
   letter-spacing: 5px;
+  line-height: 20px;
   animation: ${textFocusIn} 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
   span {
-    font-weight: 600;
+    font-weight: 400;
     position: relative;
     display: inline-block;
 
@@ -84,7 +80,7 @@ export const DescriptionText = styled.h1`
   }
 
   @media ${device.tablet} {
-    font-size: 27px;
+    font-size: 20px;
   }
 `;
 
