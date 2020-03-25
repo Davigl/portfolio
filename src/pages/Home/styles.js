@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const Footer = styled.footer`
-  position: absolute;
-  bottom: 10px;
-  right: 45px;
+  position: relative;
+  bottom: 0;
+  margin-left: 20px;
 `;
 
 export const FooterText = styled.p`
