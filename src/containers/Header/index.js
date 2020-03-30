@@ -3,7 +3,7 @@ import React from 'react';
 import Socials from '~/containers/Socials';
 
 import {
-  HeaderWrapper, DescriptionWrapper,
+  HeaderWrapper, DescriptionWrapper, CodersContainer,
   DescriptionTitle, DescriptionText, TypeWritter,
   TypeWritterText, Photo
 } from './styles';
@@ -24,6 +24,9 @@ export default function Header() {
             <TypeWritterText> A Full-Stack Developer </TypeWritterText>
           </TypeWritter>
         </div>
+        <CodersContainer>
+          <codersrank-widget username="davigl" layout="horizontal" style={{ '--badge-text-color': '#fff', '--badge-bg-color': '#fc9b8b' }} />
+        </CodersContainer>
       </DescriptionWrapper>
       <DescriptionWrapper>
         <Photo src="https://i.imgur.com/VNYWwGb.png" />

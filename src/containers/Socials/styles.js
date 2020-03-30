@@ -41,13 +41,11 @@ export const SocialsWrapper = styled.div`
   align-items: center;
   justify-items: center;
   height: 50%;
-`;
 
-export const BadgesWrapper = styled.div`
-  display: grid;
-  grid-template-rows: 120px;
-  grid-template-columns: repeat(2, 90px);
-  grid-gap: 20px;
+  @media ${device.tablet} {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+  }
 `;
 
 export const GithubIcon = styled(FaGithub)`

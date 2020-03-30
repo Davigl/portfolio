@@ -1,7 +1,8 @@
 import React from 'react';
 
 import {
-  SocialsWrapper, FCCIcon, IconWrapper, GithubIcon, LinkedinIcon, KattisIcon, SourcererIcon, MailIcon, TooltipText
+  SocialsWrapper, FCCIcon, IconWrapper, GithubIcon, LinkedinIcon,
+  KattisIcon, SourcererIcon, MailIcon, TooltipText
 } from './styles';
 
 export default function Socials() {

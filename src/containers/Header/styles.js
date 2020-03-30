@@ -9,6 +9,17 @@ export const HeaderWrapper = styled.main`
   min-height: 85vh;
 `;
 
+export const CodersContainer = styled.div`
+  width: 50%;
+  margin-top: 20px;
+  animation: ${textFocusIn} 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+  @media ${device.tablet} {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+`;
+
 export const DescriptionWrapper = styled.div`
   display: flex;
   width: 50%;
@@ -22,18 +33,15 @@ export const DescriptionWrapper = styled.div`
     grid-template-columns: 1fr 0.5fr;
     grid-template-rows: 1fr;
     width: 45%;
-    margin-top: 5vh;
   }
 
   @media ${device.tablet} {
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: 15px;
+    margin-top: 15px;
 
     &:last-child {
-      grid-gap: 7%;
       width: 100%;
-      margin-bottom: 50px;
+      grid-template-columns: 1fr;
     }
   }
 `;
@@ -71,7 +79,7 @@ export const DescriptionText = styled.h1`
       left: 0;
       right: 0;
       bottom: -5px;
-      height: 15px;
+      height: 10px;
       width: 100%;
       z-index: -1;
       background: #f47a65;
@@ -110,11 +118,15 @@ export const TypeWritterText = styled.p`
 export const Photo = styled.img`
   max-width: 80%;
   height: auto;
-  box-shadow: 10px 13px 0px 8px rgba(244,122,101,1);
+  box-shadow: 10px 13px 0px 2px rgba(244,122,101,1);
   border-radius: 2px;
 
   &:hover {
     transition: 1s ease;
     transform: scale(1.1);
+  }
+
+  @media ${device.tablet} {
+    max-width: 90%;
   }
 `;
