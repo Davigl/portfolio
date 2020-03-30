@@ -25,7 +25,8 @@ export const _icon = css`
 `;
 
 export const IconWrapper = styled.a.attrs((props) => ({
-  href: props.path
+  href: props.path,
+  target: '_blank'
 }))`
   position: relative;
   cursor: pointer;
