@@ -12,11 +12,11 @@ export const HeaderWrapper = styled.main`
 export const CodersContainer = styled.div`
   width: 50%;
   animation: ${textFocusIn} 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  margin-left: 20px;
 
   @media ${device.tablet} {
     width: 80%;
     margin-bottom: 20px;
-    margin-left: 20px;
   }
 `;
 
