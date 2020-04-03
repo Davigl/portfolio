@@ -41,9 +41,9 @@ export const SocialsWrapper = styled.div`
   grid-template-rows: repeat(2, 1fr);
   height: 50%;
   justify-items: center;
+  margin-right: 20px;
 
   @media ${device.tablet} {
-    margin-right: 20px;
     grid-template-columns: repeat(2, 1fr);
     align-items: flex-start;
   }
@@ -94,7 +94,6 @@ export const TooltipText = styled.span`
   border-radius: 6px;
   z-index: 1;
   opacity: 0;
-
   bottom: 125%;
   left: 50%;
   margin-left: -60px;
