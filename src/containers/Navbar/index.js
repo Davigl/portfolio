@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FiMenu } from 'react-icons/fi';
 
+import Logo from '~/assets/images/my-logo.png';
 import NavItem from '~/components/NavItem';
 import NavMenu from '~/components/NavMenu';
 import SideMenu from '~/containers/SideMenu';
@@ -20,9 +21,10 @@ export default function Navbar() {
     <>
       <NavWrapper>
         <NavMenu>
-          <NavItem name="home" path="/" />
+          <NavItem image={Logo} path="/" />
           <NavItem name="projects" path="/projects" />
           <NavItem name="about me" path="/about" />
+          <NavItem name="curriculum" path="/about" />
           { plusComponent() }
         </NavMenu>
       </NavWrapper>

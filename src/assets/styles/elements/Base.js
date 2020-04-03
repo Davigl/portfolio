@@ -22,6 +22,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 10px 15px 0 15px;
+    background-color: #FAFFFD;
 
     li {
       list-style: none;

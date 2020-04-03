@@ -16,11 +16,11 @@ export const _icon = css`
   }
 
   @media ${device.desktop} {
-    height: 75%;
+    height: 80%;
   }
 
   @media ${device.mobileM} {
-    height: 50%;
+    height: 70%;
   }
 `;
 
@@ -38,13 +38,13 @@ export const IconWrapper = styled.a.attrs((props) => ({
 export const SocialsWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  align-items: center;
-  justify-items: center;
+  grid-template-rows: repeat(2, 1fr);
   height: 50%;
+  justify-items: center;
 
   @media ${device.tablet} {
-    grid-template-columns: repeat(3, 1fr);
+    margin-right: 20px;
+    grid-template-columns: repeat(4, 1fr);
     align-items: flex-start;
   }
 `;

@@ -6,42 +6,45 @@ import { device } from '~/assets/styles/partials/_variables';
 export const HeaderWrapper = styled.main`
   display: flex;
   flex-wrap: wrap;
-  min-height: 85vh;
+  min-height: 80vh;
+  margin-top: 20px;
 `;
 
 export const CodersContainer = styled.div`
   width: 50%;
-  margin-top: 20px;
   animation: ${textFocusIn} 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
   @media ${device.tablet} {
-    width: 95%;
+    width: 100%;
     margin-bottom: 20px;
+    padding-right: 20px;
   }
 `;
 
 export const DescriptionWrapper = styled.div`
   display: flex;
   width: 50%;
+  align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  margin-left: 20px;
 
   &:last-child {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 0.5fr;
     grid-template-rows: 1fr;
-    width: 45%;
+    width: 40%;
   }
 
   @media ${device.tablet} {
     width: 100%;
     margin-top: 15px;
+    margin-left: 20px;
 
     &:last-child {
       width: 100%;
       grid-template-columns: 1fr;
+      align-items: flex-start;
     }
   }
 `;
@@ -54,13 +57,13 @@ export const DescriptionTitle = styled.h3`
   animation: ${textFocusIn} 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
   @media ${device.tablet} {
-    font-size: 15px;
+    font-size: 20px;
   }
 `;
 
 export const DescriptionText = styled.h1`
   font-family: 'Poppins', sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   padding: 10px 0 10px;
   font-weight: 400;
   color: #666;
@@ -104,7 +107,7 @@ export const TypeWritterText = styled.p`
   letter-spacing: 2px;
   animation: ${typing} 5s steps(50, end), ${blink} .75s normal infinite;
   white-space: nowrap;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
   border-right: 4px solid #f47a65;
@@ -116,10 +119,11 @@ export const TypeWritterText = styled.p`
 `;
 
 export const Photo = styled.img`
-  max-width: 80%;
+  max-width: 60%;
   height: auto;
-  box-shadow: 10px 13px 0px 2px rgba(244,122,101,1);
+  box-shadow: 10px 13px 0px 2px #f47a65;
   border-radius: 2px;
+  animation: ${textFocusIn} 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
   &:hover {
     transition: 1s ease;
@@ -128,5 +132,6 @@ export const Photo = styled.img`
 
   @media ${device.tablet} {
     max-width: 90%;
+    display: none;
   }
 `;

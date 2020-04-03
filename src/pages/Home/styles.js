@@ -3,9 +3,12 @@ import styled from 'styled-components';
 import { device } from '~/assets/styles/partials/_variables';
 
 export const Footer = styled.footer`
-  position: relative;
-  bottom: 10px;
-  margin-left: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  height: 56px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 56px;
+  text-align: center;
 
   @media ${device.tablet} {
     text-align: center;

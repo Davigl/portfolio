@@ -31,3 +31,12 @@ export const MenuLink = styled(NavLink).attrs((props) => ({
     background-color: #ebe1e1;
   }
 `;
+
+export const ItemImage = styled.img`
+  max-width: 15%;
+  height: auto;
+
+  @media ${device.tablet} {
+    max-width: 25%;
+  }
+`;

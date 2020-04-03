@@ -8,8 +8,9 @@ import { device } from '~/assets/styles/partials/_variables';
 export const NavWrapper = styled.nav`
   display: flex;
   justify-content: center;
-  width: 100%;
+  max-width: 1366px;
   animation: ${scaleUp} 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  margin: 0 auto;
 `;
 
 export const Plus = styled(Link).attrs((p) => ({
