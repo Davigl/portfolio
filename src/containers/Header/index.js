@@ -29,7 +29,7 @@ export default function Header() {
         </CodersContainer>
       </DescriptionWrapper>
       <DescriptionWrapper>
-        <Photo src="https://i.imgur.com/VNYWwGb.png" />
+        <Photo src="https://i.imgur.com/VNYWwGb.png" alt="Davi Guimarães" />
         <Socials />
       </DescriptionWrapper>
     </HeaderWrapper>
