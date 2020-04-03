@@ -6,8 +6,7 @@ import { device } from '~/assets/styles/partials/_variables';
 export const HeaderWrapper = styled.main`
   display: flex;
   flex-wrap: wrap;
-  min-height: 80vh;
-  margin-top: 20px;
+  min-height: 75vh;
 `;
 
 export const CodersContainer = styled.div`
@@ -17,7 +16,7 @@ export const CodersContainer = styled.div`
   @media ${device.tablet} {
     width: 100%;
     margin-bottom: 20px;
-    padding-right: 20px;
+    margin-left: 20px;
   }
 `;
 
@@ -37,15 +36,23 @@ export const DescriptionWrapper = styled.div`
   }
 
   @media ${device.tablet} {
-    width: 100%;
+    width: 90%;
     margin-top: 15px;
-    margin-left: 20px;
+    justify-content: space-around;
 
     &:last-child {
       width: 100%;
       grid-template-columns: 1fr;
       align-items: flex-start;
     }
+  }
+`;
+
+export const Introduction = styled.div`
+  @media ${device.tablet} {
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 40px;
   }
 `;
 
@@ -97,6 +104,11 @@ export const DescriptionText = styled.h1`
 
 export const TypeWritter = styled.div`
   margin-top: 10px;
+  max-width: 60%;
+
+  @media ${device.tablet} {
+    max-width: 100%;
+  }
 `;
 
 export const TypeWritterText = styled.p`

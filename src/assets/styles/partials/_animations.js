@@ -5,7 +5,7 @@ export const typing = keyframes`
       width: 0%
   }
   to {
-      width: 50%
+      width: 100%
   }
 `;
 

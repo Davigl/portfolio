@@ -5,14 +5,14 @@ import Socials from '~/containers/Socials';
 import {
   HeaderWrapper, DescriptionWrapper, CodersContainer,
   DescriptionTitle, DescriptionText, TypeWritter,
-  TypeWritterText, Photo
+  TypeWritterText, Photo, Introduction
 } from './styles';
 
 export default function Header() {
   return (
     <HeaderWrapper>
       <DescriptionWrapper>
-        <div>
+        <Introduction>
           <DescriptionTitle>
             Hello,
           </DescriptionTitle>
@@ -23,7 +23,7 @@ export default function Header() {
           <TypeWritter>
             <TypeWritterText> A Full-Stack Developer </TypeWritterText>
           </TypeWritter>
-        </div>
+        </Introduction>
         <CodersContainer>
           <codersrank-widget username="davigl" layout="horizontal" style={{ '--badge-text-color': '#fff', '--badge-bg-color': '#F47A65' }} />
         </CodersContainer>

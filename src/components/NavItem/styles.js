@@ -37,6 +37,6 @@ export const ItemImage = styled.img`
   height: auto;
 
   @media ${device.tablet} {
-    max-width: 25%;
+    max-width: 35%;
   }
 `;
