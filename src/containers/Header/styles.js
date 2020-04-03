@@ -14,7 +14,7 @@ export const CodersContainer = styled.div`
   animation: ${textFocusIn} 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
   @media ${device.tablet} {
-    width: 100%;
+    width: 80%;
     margin-bottom: 20px;
     margin-left: 20px;
   }
@@ -51,7 +51,7 @@ export const DescriptionWrapper = styled.div`
 export const Introduction = styled.div`
   @media ${device.tablet} {
     margin-left: 40px;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 40px;
   }
 `;
