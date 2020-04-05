@@ -3,10 +3,6 @@ import styled from 'styled-components';
 import { device } from '~/assets/styles/partials/_variables';
 
 export const Footer = styled.footer`
-  color: rgba(255, 255, 255, 0.7);
-  height: 56px;
-  font-size: 12px;
-  font-weight: bold;
   line-height: 56px;
   text-align: center;
 
@@ -19,5 +15,7 @@ export const Footer = styled.footer`
 export const FooterText = styled.p`
   font-family: 'NeurialGrotesk-Regular';
   color: #999;
+  height: 56px;
   font-size: 12px;
+  font-weight: bold;
 `;
