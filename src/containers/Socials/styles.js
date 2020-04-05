@@ -40,11 +40,12 @@ export const SocialsWrapper = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   height: 50%;
-  justify-items: center;
+  justify-items: flex-end;
   margin-right: 20px;
 
   @media ${device.tablet} {
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     align-items: flex-start;
   }
 `;

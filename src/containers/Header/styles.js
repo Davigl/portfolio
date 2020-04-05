@@ -7,15 +7,18 @@ export const HeaderWrapper = styled.main`
   display: flex;
   flex-wrap: wrap;
   min-height: 75vh;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
 `;
 
 export const CodersContainer = styled.div`
   width: 50%;
   animation: ${textFocusIn} 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-  margin-left: 20px;
 
   @media ${device.tablet} {
     width: 80%;
+    margin-left: 20px;
     margin-bottom: 20px;
   }
 `;

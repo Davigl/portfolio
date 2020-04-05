@@ -37,6 +37,10 @@ export const ItemImage = styled.img`
   height: auto;
 
   @media ${device.tablet} {
-    max-width: 35%;
-  }
+    max-width: 15%;
+  };
+
+  @media ${device.mobileL} {
+    max-width: 25%;
+  };
 `;
