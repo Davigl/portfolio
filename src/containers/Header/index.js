@@ -25,7 +25,7 @@ export default function Header() {
           </TypeWritter>
         </Introduction>
         <CodersContainer>
-          <codersrank-widget username="davigl" layout="horizontal" style={{ '--badge-text-color': '#fff', '--badge-bg-color': '#F47A65' }} />
+          <codersrank-widget username="davigl" layout="horizontal" style={{ '--badge-text-color': '#fff', '--badge-bg-color': '#F47A65', '--header-bg-color': '#F47A65' }} />
         </CodersContainer>
       </DescriptionWrapper>
       <DescriptionWrapper>
