@@ -5,7 +5,9 @@ import styled from 'styled-components';
 import { device } from '~/assets/styles/partials/_variables';
 
 export const Item = styled.li`
-  padding: 20px;
+  height: 60px;
+  padding: 21px 15px 21px 15px;
+  font-size: 16px;
   color: #666;
 
   &:first-child {
@@ -33,14 +35,10 @@ export const MenuLink = styled(NavLink).attrs((props) => ({
 `;
 
 export const ItemImage = styled.img`
-  max-width: 15%;
+  width: 90px;
   height: auto;
 
   @media ${device.tablet} {
-    max-width: 15%;
-  };
-
-  @media ${device.mobileL} {
-    max-width: 25%;
-  };
+    width: 50px;
+  }
 `;

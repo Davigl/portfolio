@@ -33,18 +33,23 @@ export const IconWrapper = styled.a.attrs((props) => ({
   border: transparent;
   height: 50px;
   background-color: transparent;
+
+  @media ${device.tablet} {
+    height: 40px;
+  }
 `;
 
 export const SocialsWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  height: 50%;
-  justify-items: flex-end;
-  margin-right: 20px;
+  grid-template-rows: repeat(3, 1fr);
+  height: 30%;
+  justify-items: center;
+  align-items: center;
 
   @media ${device.tablet} {
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
     justify-items: center;
     align-items: flex-start;
   }

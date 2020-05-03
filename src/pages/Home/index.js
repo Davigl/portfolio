@@ -12,7 +12,7 @@ export default function Home() {
       <Header />
       <Footer>
         <FooterText>
-          Still building <span role="img" aria-label="heart"> 🧰 </span> with <span role="img" aria-label="heart"> ❤️ </span> and <span role="img" aria-label="coffee"> ☕ </span>
+          Still building with <span role="img" aria-label="heart"> ❤️ </span> and <span role="img" aria-label="coffee"> ☕ </span>
         </FooterText>
       </Footer>
     </>

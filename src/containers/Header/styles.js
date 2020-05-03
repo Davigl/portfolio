@@ -8,43 +8,46 @@ export const HeaderWrapper = styled.main`
   flex-wrap: wrap;
   min-height: 75vh;
   max-width: 1440px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
+  justify-content: center;
 `;
 
 export const CodersContainer = styled.div`
-  width: 50%;
+  height: 160px;
+  width: 330px;
   animation: ${textFocusIn} 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  margin-bottom: 20px;
 
   @media ${device.tablet} {
-    width: 80%;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    width: 100%;
   }
 `;
 
 export const DescriptionWrapper = styled.div`
   display: flex;
-  width: 50%;
-  align-items: center;
+  flex-basis: 50%;
   justify-content: space-evenly;
   flex-direction: column;
+  padding-right: 10px;
 
   &:last-child {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 0.5fr;
     grid-template-rows: 1fr;
-    width: 40%;
+    grid-gap: 5px;
+    flex-basis: 50%;
   }
 
   @media ${device.tablet} {
-    width: 90%;
+    flex-basis: 90%;
     margin-top: 15px;
     justify-content: space-around;
+    align-items: center;
 
     &:last-child {
-      width: 100%;
+      flex-basis: 100%;
       grid-template-columns: 1fr;
       align-items: flex-start;
     }
@@ -53,9 +56,8 @@ export const DescriptionWrapper = styled.div`
 
 export const Introduction = styled.div`
   @media ${device.tablet} {
-    margin-left: 40px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    text-align: center;
+    margin-bottom: 25px;
   }
 `;
 
@@ -78,7 +80,7 @@ export const DescriptionText = styled.h1`
   font-weight: 400;
   color: #666;
   letter-spacing: 5px;
-  line-height: 20px;
+  line-height: 25px;
   animation: ${textFocusIn} 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 
   span {
@@ -135,10 +137,12 @@ export const TypeWritterText = styled.p`
 
 export const Photo = styled.img`
   max-width: 60%;
+  min-width: 205px;
   height: auto;
   box-shadow: 10px 13px 0px 2px #f47a65;
   border-radius: 2px;
   animation: ${textFocusIn} 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  justify-self: center;
 
   &:hover {
     transition: 1s ease;

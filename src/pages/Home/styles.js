@@ -15,7 +15,7 @@ export const Footer = styled.footer`
 export const FooterText = styled.p`
   font-family: 'NeurialGrotesk-Regular';
   color: #999;
-  height: 56px;
+  height: 30px;
   font-size: 12px;
   font-weight: bold;
 `;
